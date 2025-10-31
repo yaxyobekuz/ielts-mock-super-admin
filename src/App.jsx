@@ -18,6 +18,7 @@ import Link from "./pages/Link";
 import Links from "./pages/Links";
 import Tests from "./pages/Tests";
 import Login from "./pages/Login";
+import Users from "./pages/Users";
 import Tools from "./pages/Tools";
 import Stats from "./pages/Stats";
 import Result from "./pages/Result";
@@ -81,6 +82,12 @@ const App = () => {
           <Route path="teachers" element={<Outlet />}>
             <Route index element={<Teachers />} />
             <Route path=":teacherId" element={<Teacher />} />
+          </Route>
+
+          {/* Users */}
+          <Route path="users" element={<Outlet />}>
+            <Route index element={<Users />} />
+            {/* <Route path=":userId" element={<User />} /> */}
           </Route>
 
           {/* Templates */}

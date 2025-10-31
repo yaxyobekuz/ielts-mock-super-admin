@@ -5,6 +5,11 @@ const navlinks = [
     allowed: ["owner", "admin"],
   },
   {
+    label: "Foydalanuvchilar",
+    link: "users",
+    allowed: ["owner", "admin"],
+  },
+  {
     label: "Ustozlar",
     link: "teachers",
     allowed: ["owner", "admin"],
